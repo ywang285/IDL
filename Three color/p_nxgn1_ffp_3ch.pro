@@ -128,9 +128,9 @@ if err eq 0 then begin
 endif else begin
     close, 2
 
-	;for j = 0, film_l - 9 do begin
-    ;	readu, 1, frame
-    ;endfor
+	for j = 0, 10 do begin
+    	readu, 1, frame
+    endfor
 
     for j = 0, ffilm_l - 1 do begin
        if((j mod 5) eq 0) then print, j, film_l
